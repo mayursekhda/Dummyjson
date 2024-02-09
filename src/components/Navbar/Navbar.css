@@ -1,0 +1,107 @@
+@import "../../App.css";
+
+.navbar {
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.navbar .navbar-brand {
+    font-size: 2.4rem
+}
+
+.navbar .brand-and-toggler .sidebar-show-btn {
+    margin-right: 12px;
+    margin-top: 4px;
+    transition: var(--transition-ease)
+}
+
+.navbar .brand-and-toggler .sidebar-show-btn:hover {
+    opacity: .9
+}
+
+.navbar .navbar-collapse .navbar-search {
+    padding: 4px;
+    margin-left: 32px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, .1) 0 4px 6px -1px, rgba(0, 0, 0, .06) 0 2px 4px -1px
+}
+
+.navbar .navbar-collapse .navbar-search .form-control {
+    width: 100%;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, .8);
+    caret-color: var(--clr-orange)
+}
+
+.navbar .navbar-collapse .navbar-search .form-control::placeholder {
+    font-size: 13.5px;
+    font-family: var(--font-family-manrope);
+    letter-spacing: .5px
+}
+
+.navbar .navbar-collapse .navbar-search .search-btn {
+    background-color: var(--clr-orange);
+    width: 60px;
+    height: 32px
+}
+
+@media screen and (max-width:576px) {
+    .navbar .navbar-collapse .navbar-search {
+        display: none
+    }
+}
+
+.navbar .navbar-collapse .navbar-nav {
+    margin-left: 32px;
+    margin-top: 8px
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    margin-right: 16px
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    transition: var(--transition-ease)
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    opacity: .95
+}
+
+@media screen and (max-width:992px) {
+    .navbar .navbar-collapse .navbar-nav {
+        display: none
+    }
+}
+
+.navbar .navbar-cart {
+    margin-left: 32px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 2rem
+}
+
+.navbar .navbar-cart .cart-btn {
+    position: relative
+}
+
+.navbar .navbar-cart .cart-btn .cart-items-value {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: var(--clr-white);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--clr-orange);
+    padding: 0 .5rem;
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.navbar .navbar-cart .cart-btn:hover .cart-modal {
+    opacity: 1;
+    visibility: visible
+}
